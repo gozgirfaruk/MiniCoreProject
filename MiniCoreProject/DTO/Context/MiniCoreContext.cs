@@ -17,6 +17,6 @@ namespace MiniCoreProject.DTO.Context
         public DbSet<Portfolio> Portfolios { get; set; }
         public DbSet<Skill> Skills { get; set; }
         public DbSet<SocialMedia> SocialMedias { get; set; }
-        public DbSet<Testimonial> Testimonials { get; set; }
+        public DbSet<Referance> Referances { get; set; }
     }
 }

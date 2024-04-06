@@ -3,13 +3,12 @@ using MiniCoreProject.DTO.Context;
 
 namespace MiniCoreProject.ViewComponents
 {
-   
-    public class _FooterComponentPartial : ViewComponent
+    public class _SocialMediasComponentPartial : ViewComponent
     {
         MiniCoreContext context = new MiniCoreContext();
         public IViewComponentResult Invoke()
         {
-            var values =context.SocialMedias.ToList();  
+            var values = context.SocialMedias.ToList();
             return View(values);
         }
     }

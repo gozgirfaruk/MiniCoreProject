@@ -1,0 +1,12 @@
+﻿
+@model List<MiniCoreProject.DTO.Entities.SocialMedia>
+
+<ul class="home-social">
+    @foreach(var item in Model)
+    {
+          <li>
+        <a href="@item.Url"><i class="@item.Icon" aria-hidden="true"></i><span>@item.Name</span></a>
+    </li>
+    }
+  
+</ul>
