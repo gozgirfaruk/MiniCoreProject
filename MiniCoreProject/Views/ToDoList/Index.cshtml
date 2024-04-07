@@ -21,11 +21,9 @@
                             <thead>
                                 <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col">İçerik</th>
+                                    <th scope="col">Başlık</th>
                                     <th scope="col">Tarih</th>
                                     <th scope="col">Durum</th>
-                                    <th scope="col">Sil</th>
-                                    <th scope="col">Güncelle</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -35,23 +33,23 @@
                                     <tr>
                                         <td>@count</td>
                                         <td>@item.Title</td>
-                                        <td>@item.Date</td>
+                                        <td>@item.Date.ToShortDateString()</td>
                                         @if (item.Status == true)
                                         {
-                                            <td><a href="/ToDoList/ChangeToDoListStatusToFalse/@item.ToDoListID" class="btn btn-dark">Yapılmadı Olarak İşaretle</a></td>
+                                            <td><a href="/ToDoList/ChangeToDoListStatusToFalse/@item.ToDoListID" class="btn btn-outline-danger btn-round">Yapılmadı</a></td>
                                         }
                                         else
                                         {
-                                            <td><a href="/ToDoList/ChangeToDoListStatusToTrue/@item.ToDoListID" class="btn btn-info">Yapıldı OLarak İşaretle</a></td>
+                                            <td><a href="/ToDoList/ChangeToDoListStatusToTrue/@item.ToDoListID" class="btn btn-outline-success btn-round">Yapıldı</a></td>
                                         }
 
-                                        <td><a href="/ToDoList/DeleteToDoList/@item.ToDoListID" class="btn btn-danger">Sil</a></td>
-                                        <td><a href="/ToDoList/UpdateToDoList/@item.ToDoListID" class="btn btn-success">Güncelle</a></td>
+                                        <td><a href="/ToDoList/DeleteToDoList/@item.ToDoListID" class="btn btn-outline-warning">Sil</a></td>
+                                        <td><a href="/ToDoList/UpdateToDoList/@item.ToDoListID" class="btn btn-outline-info">Güncelle</a></td>
                                     </tr>
                                 }
                             </tbody>
                         </table>
-                        <a href="/ToDoList/CreateToDoList/" class="btn btn-primary">Yeni Yapılacak İşlem Girişi</a>
+                        <a href="/ToDoList/CreateToDoList/" class="btn btn-outline-primary btn-round">Yeni Yapılacak İşlem Girişi</a>
                     </div>
                 </div>
             </div>

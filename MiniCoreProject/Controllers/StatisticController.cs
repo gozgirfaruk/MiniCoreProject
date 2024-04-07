@@ -3,7 +3,7 @@ using MiniCoreProject.DTO.Context;
 
 namespace MiniCoreProject.Controllers
 {
-    public class Statistic : Controller
+    public class StatisticController : Controller
     {
         MiniCoreContext context = new MiniCoreContext();
         public IActionResult Index()

@@ -1,0 +1,49 @@
+﻿@model List<SocialMedia>
+@{
+    ViewData["Title"] = "SocialList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Sosyal</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header">
+						<div class="card-title">Sosyal Medya Listesi</div>
+					</div>
+					<div class="card-body">
+						<div class="card-sub">
+							Sosyal Medya ile ilgili işlemleri aşağıdaki panelden yapabilirsiniz.
+						</div>
+						<table class="table mt-3">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Platform</th>
+									<th scope="col">Url</th>
+									<th scope="col">Icon</th>
+								</tr>
+							</thead>
+							<tbody>
+								@foreach (var item in Model)
+								{
+									<tr>
+										<td>@item.SocialMeadiID</td>
+										<td>@item.Name</td>
+										<td>@item.Url</td>
+										<td>@item.Icon</td>
+										<td><a href="/Social/SocialDelete/@item.SocialMeadiID" class="btn btn-outline-danger btn-round">Sil</a></td>
+										<td><a href="/Social/EditSocial/@item.SocialMeadiID" class="btn btn-outline-info btn-round">Güncelle</a></td>
+									</tr>
+								}
+							</tbody>
+						</table>
+						<a href="/Social/CreateSocial" class="btn btn-outline-primary btn-round">Yeni Medya Girişi</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
