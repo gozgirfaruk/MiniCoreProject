@@ -11,7 +11,7 @@ namespace MiniCoreProject.ViewComponents
             ViewBag.first = context.Referances.Count();
             ViewBag.second = context.Portfolios.Count();
             ViewBag.third=context.Skills.Count();
-            ViewBag.fourth=context.Messages.Count();
+            ViewBag.fourth=context.Mesajs.Count();
             return View();
         }
     }

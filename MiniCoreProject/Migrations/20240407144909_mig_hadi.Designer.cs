@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MiniCoreProject.DTO.Context;
 
@@ -11,9 +12,10 @@ using MiniCoreProject.DTO.Context;
 namespace MiniCoreProject.Migrations
 {
     [DbContext(typeof(MiniCoreContext))]
-    partial class MiniCoreContextModelSnapshot : ModelSnapshot
+    [Migration("20240407144909_mig_hadi")]
+    partial class mig_hadi
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -263,33 +265,6 @@ namespace MiniCoreProject.Migrations
                     b.HasKey("SocialMeadiID");
 
                     b.ToTable("SocialMedias");
-                });
-
-            modelBuilder.Entity("MiniCoreProject.DTO.Entities.ToDoList", b =>
-                {
-                    b.Property<int>("ToDoListID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ToDoListID"), 1L, 1);
-
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("ImageUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("Status")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("ToDoListID");
-
-                    b.ToTable("ToDoLists");
                 });
 #pragma warning restore 612, 618
         }

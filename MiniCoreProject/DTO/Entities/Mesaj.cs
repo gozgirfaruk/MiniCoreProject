@@ -1,8 +1,11 @@
-﻿namespace MiniCoreProject.DTO.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace MiniCoreProject.DTO.Entities
 {
-    public class Message
+    public class Mesaj
     {
-        public string MessageID { get; set; }
+        [Key]
+        public int MessageID { get; set; }
         public string NameSurname { get; set; }
         public string Subject { get; set; }
         public string Email { get; set; }
