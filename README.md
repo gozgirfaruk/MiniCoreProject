@@ -13,6 +13,8 @@
 
 ![Ekran görüntüsü 2024-04-08 211711](https://github.com/gozgirfaruk/MiniCoreProject/assets/125920944/f320a447-449b-4421-8198-bccc073f11d4)
 
+![Ekran görüntüsü 2024-04-08 211730](https://github.com/gozgirfaruk/MiniCoreProject/assets/125920944/389f77a5-bbb0-4a2c-aa8a-70d33d2d3757)
+
 ![Ekran görüntüsü 2024-04-08 211619](https://github.com/gozgirfaruk/MiniCoreProject/assets/125920944/7617d912-cf5e-445d-892e-3f61bb6e4cc5)
 
 ![Ekran görüntüsü 2024-04-08 211607](https://github.com/gozgirfaruk/MiniCoreProject/assets/125920944/0affe82a-52d6-4bf1-8a60-bd5ac8382e37)
